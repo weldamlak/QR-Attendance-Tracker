@@ -6,6 +6,7 @@ import QRScanner from "@/components/QRScanner";
 import ApprovalModal from "@/components/ApprovalModal";
 import { supabase } from "@/lib/supabase";
 import { Student } from "@/lib/types";
+import { LogoutButton } from "@/components/LogoutButton";
 
 export default function HomePage() {
   const [pending, setPending] = useState<Student | null>(null);
@@ -110,6 +111,7 @@ export default function HomePage() {
           >
             Dashboard
           </Link>
+           <LogoutButton />
         </div>
       </header>
 
